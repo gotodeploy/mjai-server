@@ -30,5 +30,13 @@ $ curl localhost:32768
 
 ## Documents
 
-* [Mahjong Tiles](docs/tiles.md)
+### Abount mjai
+
 * [Protocols](docs/protocols.md)
+
+### About Mahjong(Riichi mahjong, Japanese mahjong)
+
+* You can find basic rule [here](http://mahjong-europe.org/) - European Mahjong Association
+* [Tiles](docs/tiles.md)
+* [Yaku](docs/yaku.md)
+* [Scoring tables](docs/scoring_tables.md)
