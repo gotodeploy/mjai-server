@@ -28,6 +28,13 @@ $ curl localhost:32768
 {"type":"error","message":"invalid join"}
 ```
 
+Also run examples to understand how this works. [Docker Compose](https://docs.docker.com/compose/) needs to be installed. It takes approximately 5 minutes to start the game.
+
+```bash
+$ cd exmaples/
+$ docker-compose up 
+```
+
 ## Documents
 
 ### Abount mjai

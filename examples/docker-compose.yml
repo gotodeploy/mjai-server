@@ -1,0 +1,34 @@
+version: '3'
+services:
+  mjai-server:
+    image: geduld/mjai-server
+    ports:
+      - 11600:11600
+  mjai-client1:
+    image: python:3.6-alpine
+    volumes:
+      - ./ai_players:/ai_players
+    links:
+      - mjai-server
+    command: python /ai_players/tsumogiri.py tcp://mjai-server:11600
+  mjai-client2:
+      image: python:3.6-alpine
+      volumes:
+        - ./ai_players:/ai_players
+      links:
+      - mjai-server
+      command: python /ai_players/tsumogiri.py tcp://mjai-server:11600
+  mjai-client3:
+      image: python:3.6-alpine
+      volumes:
+        - ./ai_players:/ai_players
+      links:
+      - mjai-server
+      command: python /ai_players/tsumogiri.py tcp://mjai-server:11600
+  mjai-client4:
+      image: python:3.6-alpine
+      volumes:
+        - ./ai_players:/ai_players
+      links:
+      - mjai-server
+      command: python /ai_players/tsumogiri.py tcp://mjai-server:11600
